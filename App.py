@@ -12,11 +12,11 @@ def contact_page():
 
 @app.route('/home')
 def home_page():
-    return "welcome to homepage"
+    return render_template("home.html")
 
 @app.route('/gallery')
 def gallery_page():
-    return "Welcome to my Gallery page"
+    return render_template("gallery.html")
 
 if __name__=="__main__":
     app.run()
